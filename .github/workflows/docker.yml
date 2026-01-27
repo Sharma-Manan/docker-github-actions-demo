@@ -21,4 +21,9 @@ jobs:
 
             - name: Build Docker image
               run: |
-                docker build -t manan2005/demo-python-app:latest .    
+                  docker build -t manan2005/demo-python-app:latest .
+            
+            - name: Push Docker image
+              run: |
+                  docker push manan2005/demo-python-app:latest     
+            
